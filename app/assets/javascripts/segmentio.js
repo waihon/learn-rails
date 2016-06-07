@@ -60,4 +60,3 @@ $(document).on('ready page:change', function() {
   analytics.trackForm($('#new_visitor'), 'Signed Up');
   analytics.trackForm($('#new_contact'), 'Contact Request');
 })
-If
