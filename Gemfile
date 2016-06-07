@@ -73,3 +73,10 @@ group :production do
   gem "pg"
   gem "rails_12factor"
 end
+
+group :test do
+  # Makes it easy to use an RSpec-like syntax with Minitest
+  gem "minitest-spec-rails"
+  # Integrates Capybara with Minitest and Rails
+  gem "minitest-rails-capybara"
+end

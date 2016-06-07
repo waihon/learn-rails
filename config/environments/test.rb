@@ -39,4 +39,9 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+  # Web console is usually being run in the development environment.
+  # To run it in the test environment as well, we have to include
+  # the following line.
+  config.web_console.development_only = false
 end
