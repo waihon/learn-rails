@@ -81,7 +81,9 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
     address: "smtp.sendgrid.net",
     port: 587, # Can use port 25, 587, or 2525 (some ISPs restrict connections port port 25)
-    domain: Rails.application.secrets.email_provider_username,
+    domain: Rails.application.secrets.domain_name,
+    authentication: "plain",
+    user_name: Rails.application.secrets.email_provider_username,
     password: Rails.application.secrets.email_provider_password
   }
   # ActionMailer Config
